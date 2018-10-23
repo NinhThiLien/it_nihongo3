@@ -1,6 +1,13 @@
 <% provide(:title, "Edit user") %>
 <% provide(:button_text, 'Save changes') %>
 <div class="row">
+  <div class="col-md-4">
+                    <div class="profile-info">
+                        <% if @user.avatar.present? %>
+                      <%=image_tag @user.avatar_url(), :class => "img-responsive profile-photo" %>
+                  <% end %>
+                    </div>
+                </div>
   <div class="col-md-6">
     <%= form_for(@user) do |f| %>
       <%= render "shared/error_messages", object: @user %>
@@ -11,10 +18,7 @@
     
       	<div>
           <%= f.label :avatar%><br>
-          <div " >
             <%= f.file_field :avatar, class: "form-control" %>
-          </div>
-        	<img id="blah" width="200" src="#" alt="your image" />
         </div>
 
       <div>

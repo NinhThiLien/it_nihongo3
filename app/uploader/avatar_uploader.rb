@@ -6,6 +6,6 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   def default_url(*args)
-    "/images/" + [version_name, "avatar-default.png"].compact.join('_')
+    "/images/" + [version_name, "avatar.png"].compact.join('_')
   end
 end
