@@ -7,9 +7,9 @@
         <div class="single-products-catagory ">
           <%= link_to book do %>
             <% if book.picture.present? %>
-              <%= cl_image_tag(book.picture, {:style => "height:650px;"}) %>
+              <%= cl_image_tag(book.picture, {:style => "height:450px;"}) %>
             <% else %>
-              <%= image_tag("default_book.jpg", {:style => "height:650px;"}) %>
+              <%= image_tag("default_book.jpg", {:style => "height:450px;"}) %>
             <% end %>
             <div class="hover-content">
               <div class="line"></div>
@@ -19,6 +19,10 @@
           <% end %>
         </div>
       <% end %>
+      
+      <div class="digg_pagination">
+				<%= will_paginate @books %>
+			</div>
     </div>
   </div>
 </div>

@@ -24,6 +24,7 @@ gem "font-awesome-rails"
 gem "pry"
 gem "faker"
 gem "ratyrate"
+gem "will_paginate"
 
 group :production do
   gem "pg",  "0.20.0"
