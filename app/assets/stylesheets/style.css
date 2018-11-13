@@ -61,3 +61,16 @@
   *:first-child + html .digg_pagination {
     border-radius: 2px;
     overflow: hidden; }
+
+.shop_sidebar_area_fix {
+  max-width: 300px !important;
+  width: 300px !important;
+}
+
+.catagories-menu ul li {
+  border-bottom: 1px solid gray;
+}
+
+.catagories-menu ul li a:hover {
+  text-decoration: none;
+}
