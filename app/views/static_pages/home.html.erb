@@ -11,14 +11,15 @@
           <div class="single-products-wrapper ">
             <%= link_to book do %>
               <% if book.picture.present? %>
-                <%= cl_image_tag(book.picture, {:style => "height:500px;"}) %>
+                <%= cl_image_tag(book.picture, {:style => "height:300px;"}) %>
               <% else %>
-                <%= image_tag("default_book.jpg", {:style => "height:500px;"}) %>
+                <%= image_tag("default_book.jpg", {:style => "height:300px;"}) %>
               <% end %>
               <div class="hover-content">
                 <div class="line"></div>
-                <p><%= book.author %></p>
                 <h4><%= book.title %></h4>
+                <span><%= book.author %></span>
+
               </div>
 
             <% end %>
